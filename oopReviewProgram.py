@@ -43,17 +43,15 @@ print(bird.get_move())
 '''
 name,type,weight,limbs,age
 '''
-outfile = open('pets.csv', 'w', newline='')
-writer = csv.writer(outfile, delimiter=',')
+outfile = open('pets.csv','w')
 
-writer.writerow('name, type, weight, limbs, age\n')
-
+outfile.write('name,type,weight,limbs,age\n')
 
 for key in pets:
-    writer.write(key + ',')
-    writer.write(pets[key][0] + ',')
-    writer.write(pets[key][1]+ ',')
-    writer.write(str(pets[key][2]) + ',')
-    writer.write(str(pets[key][3]) + '\n')
+    outfile.write(key + ',')
+    outfile.write(pets[key][0] + ',')
+    outfile.write(pets[key][1] + ',')
+    outfile.write(str(pets[key][2]) + ',')
+    outfile.write(str(pets[key][3]) + '\n')
 
 outfile.close()

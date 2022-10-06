@@ -1,2 +1,4 @@
-n,a,m,e,",", ,t,y,p,e,",", ,w,e,i,g,h,t,",", ,l,i,m,b,s,",", ,a,g,e,"
-"
+name,type,weight,limbs,age
+Oliver,dog,10 lbs,4,5
+Bentley,cat,5 lbs,4,8
+Jane,bird,1 lbs,2,3
